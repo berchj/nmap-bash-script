@@ -1,6 +1,6 @@
 # nmap-bash-script
 
-## this script process a nmap scan using the following parameters 
+## this script process a nmap scan using the following options
 
 -Pn  - option in Nmap stands for "No Ping." 
 
