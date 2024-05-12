@@ -36,7 +36,7 @@ isPackageNotInstalled xsltproc
 
 #make nmap scan
 echo "Processing nmap scan"
-sudo nmap -Pn --open -sC -sV -A -T5 -O $targetIp -oA nmap_scan -v
+sudo nmap -Pn --open -A -T5 -O $targetIp -oA nmap_scan -v
 
 #convert nmap_scan.xml into html
 xsltproc ./nmap_scan.xml -o ./nmap_scan.html
