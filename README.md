@@ -6,10 +6,6 @@
 
 --open - scan open ports 
 
--sC The - option in Nmap is used to enable the default NSE (Nmap Scripting Engine) script scan. 
-
--sV - option in Nmap is used to enable version detection during a port scan. 
-
 -A - option in Nmap is a shortcut for enabling several advanced features in a single command. It stands for "Aggressive Scan" and combines various options to provide more comprehensive information about the target system. When you use -A, Nmap performs the following actions:
 
     OS Detection (-O): Nmap attempts to determine the operating system of the target by analyzing various network characteristics, such as TCP/IP stack behavior, responses to specific probes, and other factors.
