@@ -32,7 +32,7 @@ exit 1
 fi
 
 #if not blank
-echo "This script uses nmap and xsltpro,c first check if both are installed"
+echo "This script uses nmap and xsltproc , first check if both are installed"
 
 #check if nmap installed
 isPackageNotInstalled nmap

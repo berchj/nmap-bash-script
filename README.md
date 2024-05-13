@@ -1,14 +1,10 @@
 # nmap-bash-script
 
-## this script process a nmap scan using the following parameters 
+## this script process a nmap scan using the following options
 
 -Pn  - option in Nmap stands for "No Ping." 
 
 --open - scan open ports 
-
--sC The - option in Nmap is used to enable the default NSE (Nmap Scripting Engine) script scan. 
-
--sV - option in Nmap is used to enable version detection during a port scan. 
 
 -A - option in Nmap is a shortcut for enabling several advanced features in a single command. It stands for "Aggressive Scan" and combines various options to provide more comprehensive information about the target system. When you use -A, Nmap performs the following actions:
 
@@ -24,7 +20,11 @@
 
 ## You can also edit this script to change the nmap sentence ! 
 
+<<<<<<< HEAD
 sudo nmap -Pn --open -sC -sV -A -T5 $targetIp -oA nmap_scan -v
+=======
+sudo nmap -Pn --open -A -T5 -O $targetIp -oA nmap_scan -v
+>>>>>>> 7adbaf91d46341d0278eb54538c307335d541148
 
 ## xsltproc 
 
