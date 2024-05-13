@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+echo "Ingress name of directory project"
+
+read directoryName
+
+mkdir $directoryName && cd $directoryName
+
 #function to check if dpgk package is alreary installed
 isPackageNotInstalled() {
 
@@ -36,7 +42,8 @@ isPackageNotInstalled xsltproc
 
 #make nmap scan
 echo "Processing nmap scan"
-sudo nmap -Pn --open -sC -sV -A -T5 -O $targetIp -oA nmap_scan -v
+echo "sudo permissions required"
+sudo nmap -Pn --open -sC -sV -A -T5 $targetIp -oA nmap_scan -v
 
 #convert nmap_scan.xml into html
 xsltproc ./nmap_scan.xml -o ./nmap_scan.html
