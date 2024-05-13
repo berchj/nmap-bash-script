@@ -20,11 +20,7 @@
 
 ## You can also edit this script to change the nmap sentence ! 
 
-<<<<<<< HEAD
 sudo nmap -Pn --open -sC -sV -A -T5 $targetIp -oA nmap_scan -v
-=======
-sudo nmap -Pn --open -A -T5 -O $targetIp -oA nmap_scan -v
->>>>>>> 7adbaf91d46341d0278eb54538c307335d541148
 
 ## xsltproc 
 
