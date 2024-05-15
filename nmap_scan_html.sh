@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Ingress name of directory project"
-
-read directoryName
-
-mkdir $directoryName && cd $directoryName
 
 #function to check if dpgk package is alreary installed
 isPackageNotInstalled() {
